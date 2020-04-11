@@ -4,7 +4,6 @@ function countUniqueValues(arr) {
     let j = 1;
 
     // Put unique values at the start of the array and return last unique index + 1 at the end.
-    
     while (j < arr.length) {
         if (arr[i] != arr[j]) {
             arr[i + 1] = arr[j];
@@ -12,7 +11,6 @@ function countUniqueValues(arr) {
         }
         j++;
     }
-
     console.log(i + 1);
 }
 
