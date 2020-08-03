@@ -12,7 +12,7 @@ console.log(result, result2);
 
 
 
-// Binary Search (Order arrays)
+// Binary Search (Ordered arrays)
 function binary_search(arr, search_term) {
     let start = 0;
     let end = arr.length - 1;
@@ -30,4 +30,3 @@ function binary_search(arr, search_term) {
 }
 
 binary_search([1,2,3,4,5,6,7,8,23,65], 999);
-
