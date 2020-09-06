@@ -14,4 +14,4 @@ function countUniqueValues(arr) {
     console.log(i + 1);
 }
 
-countUniqueValues([]);
+countUniqueValues([1,1,34,2,3]);
