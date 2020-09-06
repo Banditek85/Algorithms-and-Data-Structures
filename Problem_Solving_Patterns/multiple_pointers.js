@@ -14,4 +14,21 @@ function countUniqueValues(arr) {
     console.log(i + 1);
 }
 
+console.log("countUniqueValues");
 countUniqueValues([1,1,34,2,3]);
+
+
+/* Function checks if there are any duplicates in it's arguments */
+function areThereDuplicates() {
+    var result = {};
+
+    for (var i = 0; i < arguments.length; i++) {
+        var current = arguments[i];
+        !result[current] ? result[current] = 1 : result[current] += 1; 
+    }
+
+    console.log(result);
+}
+
+console.log("Are there duplicates:");
+areThereDuplicates(1,2,3,4,2,2,2);
