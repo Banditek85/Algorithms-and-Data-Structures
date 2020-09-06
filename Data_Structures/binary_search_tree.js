@@ -14,23 +14,24 @@ class BinarySearchTree {
     }
 
     insert(value) {
-        var newNode = new Node(value);
+        var node = new Node(value);
         if (this.root === null) {
-            this.root = new Node;
+            this.root = node;
             return this;
         } else {
             var current = this.root;
             while (true) {
                 if (value < current.value) {
                     if (current.left === null) {
-                        current.left = newNode;
+                        current.left = node;
                         return this;
                     } else {
                         current = current.left;
                     }
                 } else if (value > current.value) {
                     if (current.right === null) {
-                        current.right = newNode;
+                        current.right = node;
+                        return this;
                     } else {
                         current = current.right;
                     }
@@ -38,6 +39,7 @@ class BinarySearchTree {
             }
         }
     }
+<<<<<<< HEAD
 
     find(value) {
         if (this.root === value) { return true; }
@@ -66,3 +68,16 @@ t.insert(11);
 t.insert(245);
 
 console.log(t);
+=======
+}
+
+
+var bst = new BinarySearchTree();
+bst.insert(50);
+
+bst.insert(23);
+bst.insert(59);
+bst.insert(11);
+
+console.table(bst);
+>>>>>>> 1647a96bea289ad510a96a24d21d15549c2b5b68
